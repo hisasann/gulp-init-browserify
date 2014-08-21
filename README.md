@@ -1,7 +1,7 @@
 ﻿gulp-init-browserify
 ====
 
-![Image](http://gitbucket.team-lab.local/hisasann/gulp-init-browserify/blob/master/image.png?raw=true "Image")
+![Image](https://raw.githubusercontent.com/hisasann/gulp-init-browserify/master/image.png?raw=true "Image")
 
 ## Description
 
