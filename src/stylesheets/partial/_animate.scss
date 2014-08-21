@@ -1,0 +1,49 @@
+// via
+// https://github.com/teppeis/menu-like-path/blob/master/sass/_animation.scss
+// http://tenderfeel.xsrv.jp/memo/1214/
+
+@import "compass/css3/shared";
+
+// サポートベンダープレフィックス
+$animation-support: -moz, -webkit, -o, -ms, not -khtml;
+
+// アニメーション名
+$default-animation-name: none !default;
+
+// 再生時間
+$default-animation-duration: 0.5s !default;
+
+// ディレイ
+$default-animation-delay: 0 !default;
+
+// 実行回数
+// [number | infinite]
+$default-animation-iteration-count: 1 !default;
+
+// タイミング
+// [ease | liner | ease-in | ease-out | ease-in-out | cubic-bezier]
+$default-animation-timing-function: ease !default;
+
+// 反復の有無
+// [normal | alternate]
+$default-animation-direction: normal !default;
+
+// 実行前や実行後のスタイル指定
+// [none | forwards | backwards | both]
+$default-animation-fill-mode: none !default;
+
+@mixin animation($name: $default-animation-name,
+$duration: $default-animation-duration,
+$delay: $default-animation-delay,
+$count: $default-animation-iteration-count,
+$function: $default-animation-timing-function,
+$direction: $default-animation-direction,
+$fillMode: $default-animation-fill-mode) {
+  @include experimental(animation-name, $name, $animation-support...);
+  @include experimental(animation-duration, $duration, $animation-support...);
+  @include experimental(animation-delay, $delay, $animation-support...);
+  @include experimental(animation-iteration-count, $count, $animation-support...);
+  @include experimental(animation-timing-function, $function, $animation-support...);
+  @include experimental(animation-direction, $direction, $animation-support...);
+  @include experimental(animation-fill-mode, $fillMode, $animation-support...);
+}

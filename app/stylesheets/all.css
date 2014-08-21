@@ -1,0 +1,1602 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+/* line 6, style.scss */
+html {
+  height: 100%;
+}
+
+/* line 10, style.scss */
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+/* line 17, style.scss */
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* line 21, style.scss */
+a img {
+  border-style: none;
+}
+
+/* line 24, style.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* line 29, style.scss */
+p {
+  margin: 0;
+}
+
+/* line 33, style.scss */
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 38, style.scss */
+li {
+  list-style: none;
+}
+
+/* ==========================================================================
+   loading styles
+   ========================================================================== */
+/* line 46, style.scss */
+#loading {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 51, style.scss */
+#loading .box {
+  width: 354px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -177px;
+  text-align: center;
+}
+/* line 60, style.scss */
+#loading .box .txt {
+  margin-top: 50px;
+}
+/* line 62, style.scss */
+#loading .box h2 {
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   custom styles
+   ========================================================================== */
+/* line 72, style.scss */
+.unclickable {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 999;
+  background-color: #FFFFFF;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 82, style.scss */
+.bg {
+  display: block;
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #efeeee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeded), color-stop(100%, #f5f5f5));
+  background-image: -webkit-linear-gradient(top, #eeeded, #f5f5f5);
+  background-image: -moz-linear-gradient(top, #eeeded, #f5f5f5);
+  background-image: -o-linear-gradient(top, #eeeded, #f5f5f5);
+  background-image: linear-gradient(top, #eeeded, #f5f5f5);
+}
+
+/* line 92, style.scss */
+h1.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* line 97, style.scss */
+h2.logo {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+/* line 102, style.scss */
+.items ul {
+  width: 1140px;
+  height: 530px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -265px 0 0 -695px;
+}
+/* line 112, style.scss */
+.items ul li {
+  position: absolute;
+  /*transform-origin:left top;*/
+}
+/* line 115, style.scss */
+.items ul li:after {
+  content: "";
+  display: block;
+  background: url(../images/ico_shadow.png);
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  margin-left: -94px;
+  width: 188px;
+  height: 44px;
+}
+/* line 127, style.scss */
+.items ul li.item1 {
+  top: 0;
+  left: 405px;
+}
+/* line 131, style.scss */
+.items ul li.item2 {
+  top: 60px;
+  left: 670px;
+  -webkit-transform: scale(0.63);
+  -moz-transform: scale(0.63);
+  -ms-transform: scale(0.63);
+  -o-transform: scale(0.63);
+  transform: scale(0.63);
+}
+/* line 136, style.scss */
+.items ul li.item3 {
+  top: 60px;
+  left: 140px;
+  -webkit-transform: scale(0.63);
+  -moz-transform: scale(0.63);
+  -ms-transform: scale(0.63);
+  -o-transform: scale(0.63);
+  transform: scale(0.63);
+}
+/* line 141, style.scss */
+.items ul li.item4 {
+  top: 80px;
+  left: 840px;
+  -webkit-transform: scale(0.36);
+  -moz-transform: scale(0.36);
+  -ms-transform: scale(0.36);
+  -o-transform: scale(0.36);
+  transform: scale(0.36);
+}
+/* line 146, style.scss */
+.items ul li.item5 {
+  top: 80px;
+  left: -30px;
+  -webkit-transform: scale(0.36);
+  -moz-transform: scale(0.36);
+  -ms-transform: scale(0.36);
+  -o-transform: scale(0.36);
+  transform: scale(0.36);
+}
+/* line 151, style.scss */
+.items ul li.item6 {
+  top: 95px;
+  left: 945px;
+  -webkit-transform: scale(0.18);
+  -moz-transform: scale(0.18);
+  -ms-transform: scale(0.18);
+  -o-transform: scale(0.18);
+  transform: scale(0.18);
+}
+/* line 156, style.scss */
+.items ul li.item7 {
+  top: 95px;
+  left: -135px;
+  -webkit-transform: scale(0.18);
+  -moz-transform: scale(0.18);
+  -ms-transform: scale(0.18);
+  -o-transform: scale(0.18);
+  transform: scale(0.18);
+}
+
+/* line 163, style.scss */
+.selectBar {
+  height: 100%;
+  background: #000;
+  width: 260px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  z-index: 100;
+}
+
+/* line 173, style.scss */
+.selectBar .choice {
+  padding: 0 10px 20px;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+/* line 177, style.scss */
+.selectBar .choice.last {
+  padding-bottom: 100px;
+  border: none;
+}
+
+/* line 181, style.scss */
+.selectBar .choice h1 {
+  margin-left: 15px;
+}
+
+/* line 184, style.scss */
+.selectBar .choice ul {
+  margin: 10px -5px 0 0;
+  overflow: hidden;
+}
+/* line 188, style.scss */
+.selectBar .choice ul li {
+  float: left;
+  margin-right: 5px;
+}
+/* line 192, style.scss */
+.selectBar .choice ul li a:hover {
+  opacity: .7;
+}
+
+/* line 198, style.scss */
+.selectBar .choice li.off {
+  opacity: .4;
+}
+/* line 201, style.scss */
+.selectBar .choice li.off a:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+/* line 207, style.scss */
+.make {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 101;
+}
+
+/* ==========================================================================
+   order styles
+   ========================================================================== */
+/* line 218, style.scss */
+#order {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+/* line 227, style.scss */
+#order .item {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+/* line 232, style.scss */
+#order .item p {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  margin-top: -196px;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/* line 240, style.scss */
+#order .box {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -120px 0 0 50px;
+}
+/* line 247, style.scss */
+#order .box p {
+  margin-left: 13px;
+}
+/* line 251, style.scss */
+#order .box ul {
+  margin-top: 40px;
+}
+/* line 254, style.scss */
+#order .box ul li a:hover {
+  opacity: .7;
+}
+/* line 258, style.scss */
+#order .box ul li:first-child {
+  margin-bottom: 20px;
+}
+
+/* line 265, style.scss */
+#custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, development.scss */
+body {
+  background-color: #fff;
+}
+
+/* line 9, development.scss */
+.display-none {
+  display: none;
+}
+
+/* line 13, development.scss */
+#sample1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  margin-top: -337px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* line 24, development.scss */
+.button-block {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 32, development.scss */
+#sample2 {
+  width: 1000px;
+  height: 800px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border: 1px solid #000000;
+  visibility: hidden;
+}
+
+/* line 42, development.scss */
+#sample2 img {
+  position: absolute;
+}
+
+@-webkit-keyframes FadeOutBlur {
+  /* line 48, development.scss */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  /* line 52, development.scss */
+  100% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-moz-keyframes FadeOutBlur {
+  /* line 48, development.scss */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  /* line 52, development.scss */
+  100% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-ms-keyframes FadeOutBlur {
+  /* line 48, development.scss */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  /* line 52, development.scss */
+  100% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes FadeOutBlur {
+  /* line 48, development.scss */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  /* line 52, development.scss */
+  100% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-webkit-keyframes FadeInBlur {
+  /* line 59, development.scss */
+  0% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+
+  /* line 63, development.scss */
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@-moz-keyframes FadeInBlur {
+  /* line 59, development.scss */
+  0% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+
+  /* line 63, development.scss */
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@-ms-keyframes FadeInBlur {
+  /* line 59, development.scss */
+  0% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+
+  /* line 63, development.scss */
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@keyframes FadeInBlur {
+  /* line 59, development.scss */
+  0% {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+
+  /* line 63, development.scss */
+  100% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+@-webkit-keyframes FadeOutHuerotate {
+  /* line 70, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+
+  /* line 73, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+}
+
+@-moz-keyframes FadeOutHuerotate {
+  /* line 70, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+
+  /* line 73, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+}
+
+@-ms-keyframes FadeOutHuerotate {
+  /* line 70, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+
+  /* line 73, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+}
+
+@keyframes FadeOutHuerotate {
+  /* line 70, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+
+  /* line 73, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+}
+
+@-webkit-keyframes FadeInHuerotate {
+  /* line 79, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+
+  /* line 82, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+}
+
+@-moz-keyframes FadeInHuerotate {
+  /* line 79, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+
+  /* line 82, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+}
+
+@-ms-keyframes FadeInHuerotate {
+  /* line 79, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+
+  /* line 82, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+}
+
+@keyframes FadeInHuerotate {
+  /* line 79, development.scss */
+  0% {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+
+  /* line 82, development.scss */
+  100% {
+    -webkit-filter: hue-rotate(200deg);
+    -moz-filter: hue-rotate(200deg);
+    filter: hue-rotate(200deg);
+  }
+}
+
+@-webkit-keyframes FadeOutGrayscale {
+  /* line 88, development.scss */
+  0% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+
+  /* line 91, development.scss */
+  100% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
+@-moz-keyframes FadeOutGrayscale {
+  /* line 88, development.scss */
+  0% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+
+  /* line 91, development.scss */
+  100% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
+@-ms-keyframes FadeOutGrayscale {
+  /* line 88, development.scss */
+  0% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+
+  /* line 91, development.scss */
+  100% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
+@keyframes FadeOutGrayscale {
+  /* line 88, development.scss */
+  0% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+
+  /* line 91, development.scss */
+  100% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
+@-webkit-keyframes FadeInGrayscale {
+  /* line 97, development.scss */
+  0% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  /* line 100, development.scss */
+  100% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+}
+
+@-moz-keyframes FadeInGrayscale {
+  /* line 97, development.scss */
+  0% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  /* line 100, development.scss */
+  100% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+}
+
+@-ms-keyframes FadeInGrayscale {
+  /* line 97, development.scss */
+  0% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  /* line 100, development.scss */
+  100% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+}
+
+@keyframes FadeInGrayscale {
+  /* line 97, development.scss */
+  0% {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  /* line 100, development.scss */
+  100% {
+    -webkit-filter: grayscale(0.9);
+    -moz-filter: grayscale(0.9);
+    filter: grayscale(0.9);
+  }
+}
+
+@-webkit-keyframes FadeOutInvert {
+  /* line 106, development.scss */
+  0% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+
+  /* line 109, development.scss */
+  100% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+}
+
+@-moz-keyframes FadeOutInvert {
+  /* line 106, development.scss */
+  0% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+
+  /* line 109, development.scss */
+  100% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+}
+
+@-ms-keyframes FadeOutInvert {
+  /* line 106, development.scss */
+  0% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+
+  /* line 109, development.scss */
+  100% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+}
+
+@keyframes FadeOutInvert {
+  /* line 106, development.scss */
+  0% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+
+  /* line 109, development.scss */
+  100% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+}
+
+@-webkit-keyframes FadeInInvert {
+  /* line 115, development.scss */
+  0% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+
+  /* line 118, development.scss */
+  100% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+}
+
+@-moz-keyframes FadeInInvert {
+  /* line 115, development.scss */
+  0% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+
+  /* line 118, development.scss */
+  100% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+}
+
+@-ms-keyframes FadeInInvert {
+  /* line 115, development.scss */
+  0% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+
+  /* line 118, development.scss */
+  100% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+}
+
+@keyframes FadeInInvert {
+  /* line 115, development.scss */
+  0% {
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    filter: invert(0);
+  }
+
+  /* line 118, development.scss */
+  100% {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+  }
+}
+
+/* line 124, development.scss */
+.fadeOutBlur-animate {
+  -webkit-animation-name: FadeOutBlur;
+  -moz-animation-name: FadeOutBlur;
+  -ms-animation-name: FadeOutBlur;
+  -o-animation-name: FadeOutBlur;
+  animation-name: FadeOutBlur;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 128, development.scss */
+.fadeInBlur-animate {
+  -webkit-animation-name: FadeInBlur;
+  -moz-animation-name: FadeInBlur;
+  -ms-animation-name: FadeInBlur;
+  -o-animation-name: FadeInBlur;
+  animation-name: FadeInBlur;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 132, development.scss */
+.zoomOutRight-animate {
+  -webkit-animation-name: zoomOutRight;
+  -moz-animation-name: zoomOutRight;
+  -ms-animation-name: zoomOutRight;
+  -o-animation-name: zoomOutRight;
+  animation-name: zoomOutRight;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 136, development.scss */
+.zoomInLeft-animate {
+  -webkit-animation-name: zoomInLeft;
+  -moz-animation-name: zoomInLeft;
+  -ms-animation-name: zoomInLeft;
+  -o-animation-name: zoomInLeft;
+  animation-name: zoomInLeft;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 140, development.scss */
+.huerorateIn-animate {
+  -webkit-animation-name: FadeInHuerotate;
+  -moz-animation-name: FadeInHuerotate;
+  -ms-animation-name: FadeInHuerotate;
+  -o-animation-name: FadeInHuerotate;
+  animation-name: FadeInHuerotate;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 144, development.scss */
+.huerorateOut-animate {
+  -webkit-animation-name: FadeOutHuerotate;
+  -moz-animation-name: FadeOutHuerotate;
+  -ms-animation-name: FadeOutHuerotate;
+  -o-animation-name: FadeOutHuerotate;
+  animation-name: FadeOutHuerotate;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 148, development.scss */
+.grayscaleIn-animate {
+  -webkit-animation-name: FadeInGrayscale;
+  -moz-animation-name: FadeInGrayscale;
+  -ms-animation-name: FadeInGrayscale;
+  -o-animation-name: FadeInGrayscale;
+  animation-name: FadeInGrayscale;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 152, development.scss */
+.grayscaleOut-animate {
+  -webkit-animation-name: FadeOutGrayscale;
+  -moz-animation-name: FadeOutGrayscale;
+  -ms-animation-name: FadeOutGrayscale;
+  -o-animation-name: FadeOutGrayscale;
+  animation-name: FadeOutGrayscale;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 156, development.scss */
+.invertIn-animate {
+  -webkit-animation-name: FadeInInvert;
+  -moz-animation-name: FadeInInvert;
+  -ms-animation-name: FadeInInvert;
+  -o-animation-name: FadeInInvert;
+  animation-name: FadeInInvert;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 160, development.scss */
+.invertOut-animate {
+  -webkit-animation-name: FadeOutInvert;
+  -moz-animation-name: FadeOutInvert;
+  -ms-animation-name: FadeOutInvert;
+  -o-animation-name: FadeOutInvert;
+  animation-name: FadeOutInvert;
+  -webkit-animation-duration: 0.2s;
+  -moz-animation-duration: 0.2s;
+  -ms-animation-duration: 0.2s;
+  -o-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 164, development.scss */
+.bounceIn1-animate {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 168, development.scss */
+.bounceIn2-animate {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 172, development.scss */
+.bounceIn3-animate {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 176, development.scss */
+.bounceIn4-animate {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  -ms-animation-delay: 0.7s;
+  -o-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 180, development.scss */
+.bounceIn5-animate {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -ms-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 184, development.scss */
+.bounceOut1-animate {
+  -webkit-animation-name: bounceOut;
+  -moz-animation-name: bounceOut;
+  -ms-animation-name: bounceOut;
+  -o-animation-name: bounceOut;
+  animation-name: bounceOut;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 188, development.scss */
+.bounceOut2-animate {
+  -webkit-animation-name: bounceOut;
+  -moz-animation-name: bounceOut;
+  -ms-animation-name: bounceOut;
+  -o-animation-name: bounceOut;
+  animation-name: bounceOut;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 192, development.scss */
+.bounceOut3-animate {
+  -webkit-animation-name: bounceOut;
+  -moz-animation-name: bounceOut;
+  -ms-animation-name: bounceOut;
+  -o-animation-name: bounceOut;
+  animation-name: bounceOut;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}

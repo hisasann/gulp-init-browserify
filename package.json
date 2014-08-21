@@ -1,0 +1,55 @@
+{
+  "name": "gulp-init-browserify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hisasann",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      "coffeeify",
+      "debowerify"
+    ]
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "connect": "^2.19.5",
+    "connect-livereload": "^0.4.0",
+    "opn": "^0.1.2",
+    "colors": "^0.6.2",
+    "browserify": "^4.2.0",
+    "vinyl-source-stream": "^0.1.1",
+    "vinyl-buffer": "^0.0.0",
+    "coffeeify": "^0.6.0",
+    "debowerify": "^0.7.1",
+    "browsernizr": "^1.0.2",
+    "watchify": "^0.6.4",
+    "gulp": "^3.8.5",
+    "gulp-util": "^2.2.19",
+    "gulp-coffee": "^2.0.1",
+    "gulp-uglify": "^0.3.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-coffeelint": "^0.3.3",
+    "gulp-size": "^0.4.0",
+    "gulp-livereload": "^2.1.0",
+    "gulp-clean": "^0.3.0",
+    "gulp-plumber": "^0.6.3",
+    "gulp-sass": "0.7.1",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-csso": "^0.2.9",
+    "gulp-compass": "^1.1.9",
+    "gulp-if": "^1.2.1",
+    "gulp-watchify": "^0.2.0",
+    "gulp-imagemin": "0.6.2",
+    "imagemin-pngcrush": "~0.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+  }
+}
