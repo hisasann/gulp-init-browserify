@@ -1,8 +1,6 @@
 ﻿gulp-init-browserify
 ====
 
-Overview
-
 ## Description
 
 It is a project of the minimum configuration to the browserify using a gulp of build tools
