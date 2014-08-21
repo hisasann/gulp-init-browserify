@@ -1,7 +1,9 @@
 ﻿gulp-init-browserify
 ====
 
-![Image](https://raw.githubusercontent.com/hisasann/gulp-init-browserify/master/image.png?raw=true "Image")
+<p align="center">
+  <img height="257" width="114" src="https://raw.githubusercontent.com/hisasann/gulp-init-browserify/master/image.png?raw=true">
+</p>
 
 ## Description
 
